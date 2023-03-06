@@ -3,10 +3,12 @@ package n1exercici1;
 public class PersonaDeProva {
     private String name;
     private String surname;
+    private int edat;
 
-    public PersonaDeProva(String name, String surname) {
-        setName(name);
-        setSurname(surname);
+    public PersonaDeProva(String name, String surname, int edat) {
+        this.name = name;
+        this.surname = surname;
+        this.edat = edat;
     }
 
     public String getName() {
@@ -23,6 +25,14 @@ public class PersonaDeProva {
 
     public void setSurname(String surname) {
         this.surname = surname;
+    }
+
+    public int getEdat() {
+        return edat;
+    }
+
+    public void setEdat(int edat) {
+        this.edat = edat;
     }
 
     @Override

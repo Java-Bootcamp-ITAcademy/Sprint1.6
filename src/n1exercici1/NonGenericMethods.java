@@ -5,13 +5,13 @@ import java.util.Set;
 import java.util.TreeSet;
 
 public class NonGenericMethods<T> {  //Declaring class with generic T
-    T t1;
-    T t2;
-    T t3;
+    private T t1;
+    private T t2;
+    private T t3;
     public NonGenericMethods(T first, T second, T third) {  //Constructor
-        setT1(first);
-        setT2(second);
-        setT3(third);
+        this.t1=first;
+        this.t2=second;
+        this.t3=third;
     }
 
     public T getT1() {
